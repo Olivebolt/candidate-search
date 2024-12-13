@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  font-family: 'Inter Tight', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: linear-gradient(
+          180deg,
+          rgb(32, 44, 136) 0%,
+          rgba(9, 9, 121, 1) 15%,
+          rgba(0, 2, 18, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Navigation Styles */
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  padding: 1rem 0;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(100, 108, 255, 0.2);
+  color: #fff;
+}
+
+/* Main Container Styles */
+main, section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  margin: 20px auto;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid #646cff;
+}
+
+td {
+  padding: 15px;
+}
+
+tr {
+  transition: transform 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+tbody tr:hover {
+  transform: scale(1.01);
+}
+
+/* Card Styles */
+.candidate-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.candidate-card:hover {
+  transform: translateY(-5px);
+}
+
+.candidate-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: block;
+  border: 3px solid #646cff;
+  object-fit: cover;
+}
+
+.candidate-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.candidate-card p {
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button Styles */
+button {
+  border-radius: 8px;
+  border: 2px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: rgba(100, 108, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.25s;
+  min-width: 100px;
+  color: #fff;
+}
+
+button:hover {
+  background: rgba(100, 108, 255, 0.4);
+  border-color: #535bf2;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+/* Links */
+a {
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Table Image */
+.candidate-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .candidate-card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}

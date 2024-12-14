@@ -1,0 +1,56 @@
+# Candidate Seeker
+
+![MIT License Badge](https://img.shields.io/badge/License-MIT-green.svg)
+
+## 🌐 Website
+Access the Candidate Discovery website to find future candidates for your projects using GitHub!
+
+---
+
+## Table of Contents
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Usage](#usage)
+- [Questions](#questions)
+
+---
+
+## Description
+The **Candidate Discovery** website allows users to search for potential candidates for their projects. Using the GitHub API, it retrieves detailed information about developers, including their name, username, location, email, and more. The app also enables users to save preferred candidates for future reference.
+
+### Key Features:
+- Search for candidates on GitHub based on various criteria.
+- View detailed information about each candidate.
+- Save candidates for future reference.
+- Manage saved candidates via a dedicated page.
+
+---
+
+## Technologies Used
+This project leverages the following technologies:
+- **React**: For building the user interface.
+- **TypeScript**: For type-safe development.
+- **GitHub API**: To fetch candidate data.
+
+---
+
+## License
+This project is licensed under the MIT License. To view the license, click [here](LICENSE).
+
+---
+
+## Usage
+1. Navigate to the **Search Page** to start looking for candidates on GitHub.
+2. View detailed profiles and decide whether to save or reject them.
+3. Access the **Saved Candidates Page** to view all the candidates you have saved for future reference.
+
+---
+
+## Questions
+For further questions, feel free to reach out or explore my other projects:
+- GitHub Profile: [Olivenson Bauvil](https://github.com/Olivebolt)
+
+---
+
+Thank you for using **Candidate Seeker**!
